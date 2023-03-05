@@ -2,6 +2,7 @@ import { motion as m } from "framer-motion";
 import React, { useState } from "react";
 import ProjectData from "./ProjectData";
 import "./Projects.css";
+import { BiLink } from "react-icons/bi";
 
 const Project = () => {
   const [item, setItem] = useState(ProjectData);
@@ -29,7 +30,7 @@ const Project = () => {
       initial={"offscreen"}
       whileInView={"onscreen"}
       exit={"exit"}
-      viewport={{once:false,amount:0.3}}
+      viewport={{once:false,amount:0.1}}
       transition={{ staggerChildren: 0.2 }}
     >
       <m.h2 className="project_heading" variants={heading}   
@@ -52,12 +53,10 @@ const Project = () => {
       </m.div>
 
       {/* grid */}
-      <m.div className="project_container"     variants={heading}
-
->
-        {/* here we are loading components accordiing to data so using items.map, but in exprience we made components then sent items to it so we directly did data.map and sent props not used it directly aas we had made card for it so hav to sent props to it*/}
+      <m.div className="project_container" variants={heading}>
+        
         {item.map((value) => {
-          const { id, image, title, category } = value;
+          const { id, image, title, category,link } = value;
 
           return (
             <div className="project_card" key={id}>
@@ -66,8 +65,8 @@ const Project = () => {
                 <span className="project_category">{category}</span>
                 <h3 className="project_title">{title}</h3>
                 {/* put the website link here */}
-                <a href="#home" className="project_button">
-                  <i className="project_button_icon">hi</i>
+                <a target="_blank" rel="noreferrer" href={link} className="project_button">
+               <BiLink className="project_button_icon"/>
                 </a>
               </div>
             </div>

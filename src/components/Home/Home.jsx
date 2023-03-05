@@ -50,7 +50,7 @@ const Home = () => {
             <a href="#contact">Contact Me</a>
           </button>
           <button className="home-buttons-cv">
-            <a href={Resume}>Download CV</a>
+            <a target="_blank" rel="noreferrer" href={Resume}>Download CV</a>
           </button>
         </div>
         <Scrolldown />

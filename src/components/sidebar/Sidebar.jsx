@@ -54,7 +54,7 @@ const Sidebar = () => {
             <p>Thanks For Visiting  </p>
           </span>
         </div>
-
+        
         {/* for responsive */}
       </m.div>
       <div onClick={()=>{setToggle (!toggle)}} className={toggle?"nav_toggle nav_toggle-open":"nav_toggle"}>

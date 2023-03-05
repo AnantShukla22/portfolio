@@ -11,11 +11,11 @@ const Portfolio = () => {
     onscreen: {
       x: "0",
       opacity:1,
-      // rotate: [360, 180, 0],
+      rotate: [360, 180, 0],
       transition: { duration: 0.2, type: "spring", bounce: 0.4},
     },
     exit:{
-      // rotate: [0, 180, 360],
+      rotate: [0, 180, 360],
       opacity:0,
       x: "-100vw"
     }
@@ -26,11 +26,11 @@ const Portfolio = () => {
     onscreen: {
       x: "0",
       opacity:1,
-      // rotate: [0, 180, 360],
-      transition: { duration: 0.2, type: "spring", bounce: 0.4 },
+      rotate: [0, 180, 360],
+      transition: { duration: 0.25, type: "spring", bounce: 0.4 },
     },
     exit:{
-      // rotate: [360, 180, 0],
+      rotate: [360, 180, 0],
       opacity:0,
       x: "-100vw"
     }
@@ -53,7 +53,7 @@ const Portfolio = () => {
       whileInView={"onscreen"}
       exit={"exit"}
       viewport={{once:false,amount:0.1}}
-      transition={{ staggerChildren: 0.8 }}
+      transition={{ staggerChildren: 0.4 }}
     >
       <m.h2 variants={heading} className="resume_title">
         Exprience

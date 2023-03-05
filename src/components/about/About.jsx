@@ -10,7 +10,7 @@ const About = () => {
     offscreen: { opacity: 0 },
     onscreen: {
       opacity: 1,
-      transition: { duration: 0.2 },
+      transition: { duration: 0.3 },
     },
     exit: {
       opacity: 0,
@@ -49,8 +49,8 @@ const About = () => {
       whileInView={"onscreen"}
 
       exit={"exit"}
-      viewport={{ once: false, amount: 0.2 }}
-      transition={{ staggerChildren: 0.1 }}
+      viewport={{ once: false, amount: 0.1 }}
+      transition={{ staggerChildren: 0.2 }}
     >
       <m.h2
         variants={about_title}
@@ -78,7 +78,7 @@ const About = () => {
             I am an enthusiastic and driven pre-final year Computer Science student in SRMIST . I want to kick start my career in technical role to utilize my strong analytical skills and technical knowledge in the Tech Industry to build something meaningful. I am able to quickly adapt to new technologies hence, my technical skills, attention to detail, and passion for creating web applications make me a great fit for the role of a web developer.
             </p>
             <m.button variants={my_skills} className="about_cv_button">
-              <a href={Resume}>Download CV</a>
+              <a target="_blank" rel="noreferrer" href={Resume}>Download CV</a>
             </m.button>
           </div>
 

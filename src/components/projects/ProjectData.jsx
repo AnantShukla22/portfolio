@@ -11,42 +11,49 @@ const ProjecctData=[
     {
         id:1,
         image:solanart,
-        title:"Foodies Bay",
-        category:"Frontend"
+        title:"Solanart 2.0",
+        category:"Frontend",
+        link:"https://solanart2.netlify.app/"
     },
     {
         id:2,
         image:amazon,
-        title:"Here's Your Trip",
-        category:"Frontend"
+        title:"Amazon Clone",
+        category:"Frontend",
+        link:"https://myamazon.vercel.app"
     }, {
         id:3,
         image:hulu,
-        title:"Portfolio Website",
-        category:"Frontend"
+        title:"Hulu Clone",
+        category:"Frontend",
+        link:"https://merahulu.vercel.app"
     },
     {
         id:4,
         image:foodiesapp,
-        title:"Here's Your Trip",
-        category:"Frontend"
+        title:"Foodies Spot",
+        category:"Frontend",
+        link:"https://foodiesspot.vercel.app/"
     }, {
         id:5,
         image:portfolio,
-        title:"Portfolio Website",
-        category:"Frontend"
+        title:"My Portfolio",
+        category:"Frontend",
+        link:"https://anantshukla22.vercel.app"
     },
     {
         id:6,
         image:todoapp,
-        title:"MintVerse:Make Ur Metaverse",
-        category:"Blockchain"
+        title:"To-do App Blockchain",
+        category:"Blockchain",
+        link:"https://meratodoapp.netlify.app"
     },
     {
         id:7,
         image:lotteryapp,
-        title:"NFT ",
-        category:"Blockchain"
+        title:"Lottery App",
+        category:"Blockchain",
+        link:"https://mylotteryapp.netlify.app/"
     }
 
 ]
