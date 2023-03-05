@@ -44,7 +44,7 @@ const ProjecctData=[
     {
         id:6,
         image:todoapp,
-        title:"To-do App Blockchain",
+        title:"To-do App",
         category:"Blockchain",
         link:"https://meratodoapp.netlify.app"
     },
