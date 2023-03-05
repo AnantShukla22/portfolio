@@ -52,18 +52,18 @@
 
 .copyright p {
   color: #edebeb;
-  font-size: 17px;
+  font-size: 20px;
   transform: rotate(-180deg);
   writing-mode: vertical-rl;
   font-weight: 800;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background: linear-gradient(
     90deg,
-    #d18f02,
-    #7d0086,
-    #0033ff,
-    #686c02,
-    #c82954
+    black,
+    rgb(115, 115, 115),
+    black,
+    rgb(115, 115, 115),
+    black
   );
   background-size: 400%;
   -webkit-text-fill-color: transparent;
