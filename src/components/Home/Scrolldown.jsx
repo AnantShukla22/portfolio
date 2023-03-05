@@ -8,7 +8,6 @@ const Scrolldown = () => {
         <span className="scroll_name">Discover Me</span>
         <span className="wheel_wrapper">
           <span className="wheel">
-
           </span>
         </span>
       </a>
