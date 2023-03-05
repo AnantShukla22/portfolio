@@ -13,7 +13,7 @@ const ProjecctData=[
         image:solanart,
         title:"Solanart 2.0",
         category:"Frontend",
-        link:"https://solanart2.netlify.app/"
+        link:"https://solanart2-0.vercel.app/"
     },
     {
         id:2,
