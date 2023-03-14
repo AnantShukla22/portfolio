@@ -1,0 +1,121 @@
+.resume {
+  padding: 30px 100px 100px 100px;
+  /* min-height: 100vh; */
+  /* min-width: 100vh; */
+  overflow: hidden;
+}
+.resume_container {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  padding: 30px 60px 30px 60px;
+}
+.resume_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  background-color: rgb(32, 32, 32);
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 1px 2px 7px 0px var(--bgcolor-color);
+}
+
+.timeline_data {
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+.timeline_data:last-child {
+  padding-bottom: 0;
+}
+
+.timeline_data::before {
+  content: "";
+  width: 2.5px;
+  height: 100%;
+  background-color: var(--text-color);
+  position: absolute;
+  left: 4px;
+  top: 0;
+  /* z-index: 10; */
+}
+
+.icon-briefcase,
+.icon-graduation {
+  position: absolute;
+  left: -6px;
+  top: 0;
+  font-size: 22px;
+  background: rgb(32, 32, 32);
+  padding: 2px 0;
+  z-index: 10;
+  color: var(--heading-color);
+  color: rgba(255, 67, 67, 0.6);
+}
+
+.timeline_year {
+  color: var(--heading-color);
+  color: rgba(255, 236, 193, 0.763);
+  font-weight: 600;
+  margin: 5px 0 5px 0;
+  font-size: 12px;
+}
+.timeline_title {
+  font-size: 17px;
+  margin: 0px 0 3px 0px;
+  color: var(--bgcolor-color);
+  font-weight: 600;
+  margin: 1px 0 15px 0;
+}
+
+.timeline_desc {
+  font-size: 15px;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1145px) {
+  .resume {
+    padding: 30px 70px 80px 70px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .resume {
+    padding: 30px 60px 80px 60px;
+  }
+  .resume_container {
+    grid-template-columns: 378px;
+    justify-content: center;
+    row-gap: 30px;
+  }
+  .timeline_data::before {
+    left: 2px;
+  }
+  .resume_title {
+    font-size:31px;
+  }
+
+}
+
+@media screen and (max-width: 690px) {
+  .resume {
+    padding: 30px 30px 60px 30px;
+  }
+  .resume_container {
+    grid-template-columns: 360px;
+  }
+
+}
+@media screen and (max-width: 500px) {
+  .resume_title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}

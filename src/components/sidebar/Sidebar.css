@@ -1,0 +1,138 @@
+.aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #75b01d;
+  border-right: 1px solid var(--heading-color);
+  padding: 40px;
+  width: 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.nav_logo{
+  width: 100px;
+  height: 80px;
+}
+.nav_list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.nav_icon1 {
+  color: var(--body-color);
+  color: #e14801;
+  color: rgb(35, 35, 35);
+}
+.nav_icon2 {
+  color: rgb(35, 35, 35);
+
+}
+.nav_icon3 {
+  color: rgb(35, 35, 35);
+}
+
+.nav_icon4 {
+  color: rgb(35, 35, 35);
+}
+
+.nav_icon5 {
+  color: rgb(35, 35, 35);
+}
+
+.nav_icon:hover {
+  color: var(--text-color);
+  transform: scale(1.3);
+}
+
+.copyright p {
+  margin-top: 20px;
+  color: #edebeb;
+  font-size: 20px;
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+  font-weight: 800;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: linear-gradient(
+    90deg,
+    black,
+    rgb(115, 115, 115),
+    black,
+    rgb(115, 115, 115),
+    black
+  );
+  background-size: 400%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animates 10s linear infinite;
+} 
+
+@keyframes animates {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+/* for responsive toggle */
+.nav_toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  background-color: var(--body-color);
+  border: 1px solid var(--text-color);
+  /* nonneeeeeeeeeeeeeeeeeeeeeeee */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  height: 36px;
+  width: 39px;
+  color: white;
+  transition: 0.3s;
+  padding: 3px;
+}
+
+@media screen and (max-width: 1024px) {
+  .aside {
+    left: -110px;
+  }
+  .nav_toggle {
+    display: flex;
+  }
+  .nav_toggle-open {
+    left: 120px;
+  }
+  .show_menu {
+    left: 0;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav_toggle {
+    top: 15px;
+    left: 15px;
+    height: 30px;
+    width: 32px;
+  }
+
+  .nav_toggle {
+    display: flex;
+  }
+  .nav_toggle-open {
+    left: 120px;
+  }
+  .show_menu {
+    left: 0;
+    transition: 0.3s;
+  }
+}

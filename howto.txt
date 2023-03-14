@@ -1,0 +1,21 @@
+always make root things for css
+set ul style none
+set a decor none
+set button cursor pointer, border none, outline none
+
+create reusable css class which u will put in each component
+
+since sidebar has taken 110px we have to declare marginleft:110px in main in app.css
+
+give section padding 7rem from top and 2rem from bottom 
+
+-learn everything about grid that is in about section, like grid-template-columns
+
+-learn everything about ::before
+
+learn about display inline block in project_category in project.jss
+
+leanr how filter works in project.js
+
+in framer motion see -react-intersection-observer
+

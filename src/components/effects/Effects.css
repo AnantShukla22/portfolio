@@ -1,0 +1,188 @@
+.bubbles{
+    display: flex;
+    position: relative;
+    z-index: -1;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    /* min-width: 100vh; */
+    /* margin-left: 110px; */
+    /* height: 1100vh; */
+}
+
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: var(--button-color);
+    margin: 0 21px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px var(--button-color),0 0 50px var(--button-color) ,0 0 100px var(--button-color);
+    animation: animate 15s linear infinite;
+    
+}
+
+.bubbles span:nth-child(1){
+    background: var(--heading-color);
+    box-shadow: 0 0 0 10px var(--heading-color),0 0 50px var(--heading-color) ,0 0 100px var(--heading-color);
+    animation-duration: 5s;
+}
+.bubbles span:nth-child(2){
+    background: var(--button-color);
+    box-shadow: 0 0 0 10px var(--button-color),0 0 50px var(--button-color) ,0 0 100px var(--button-color);
+    animation-duration: 7s;
+
+}
+
+.bubbles span:nth-child(3){
+    background: var(--heading-color);
+    box-shadow: 0 0 0 10px var(--heading-color),0 0 50px var(--heading-color) ,0 0 100px var(--heading-color);
+    animation-duration: 13s;
+
+}
+.bubbles span:nth-child(4){
+    background: var(--button-color);
+    box-shadow: 0 0 0 10px var(--button-color),0 0 50px var(--button-color) ,0 0 100px var(--button-color);
+    animation-duration:9s;
+
+}.bubbles span:nth-child(5){
+    background: var(--heading-color);
+    box-shadow: 0 0 0 10px var(--heading-color),0 0 50px var(--heading-color) ,0 0 100px var(--heading-color);
+    animation-duration: 8s;
+
+}.bubbles span:nth-child(6){
+    background: var(--button-color);
+    box-shadow: 0 0 0 10px var(--button-color),0 0 50px var(--button-color) ,0 0 100px var(--button-color);
+    animation-duration: 5s;
+
+}.bubbles span:nth-child(7){
+    background: var(--heading-color);
+    box-shadow: 0 0 0 10px var(--heading-color),0 0 50px var(--heading-color) ,0 0 100px var(--heading-color);
+    animation-duration: 14s;
+
+}.bubbles span:nth-child(8){
+    background: var(--button-color);
+    box-shadow: 0 0 0 10px var(--button-color),0 0 50px var(--button-color) ,0 0 100px var(--button-color);
+    animation-duration: 9s;
+
+}.bubbles span:nth-child(9){
+    background: var(--heading-color);
+    box-shadow: 0 0 0 10px var(--heading-color),0 0 50px var(--heading-color) ,0 0 100px var(--heading-color);
+    animation-duration: 4s;
+
+}.bubbles span:nth-child(10){
+    background: var(--button-color);
+    box-shadow: 0 0 0 10px var(--button-color),0 0 50px var(--button-color) ,0 0 100px var(--button-color);
+    animation-duration: 12s;
+
+}.bubbles span:nth-child(11){
+    background: var(--heading-color);
+    box-shadow: 0 0 0 10px var(--heading-color),0 0 50px var(--heading-color) ,0 0 100px var(--heading-color);
+    animation-duration: 16s;
+}
+.bubbles span:nth-child(12){
+    background: var(--button-color);
+    box-shadow: 0 0 0 10px var(--button-color),0 0 50px var(--button-color) ,0 0 100px var(--button-color);
+    animation-duration: 7s;
+
+}.bubbles span:nth-child(13){
+    background: var(--heading-color);
+    box-shadow: 0 0 0 10px var(--heading-color),0 0 50px var(--heading-color) ,0 0 100px var(--heading-color);
+    animation-duration: 10s;
+}.bubbles span:nth-child(14){
+    background: var(--button-color);
+    box-shadow: 0 0 0 10px var(--button-color),0 0 50px var(--button-color) ,0 0 100px var(--button-color);
+    animation-duration: 22s;
+
+}.bubbles span:nth-child(15){
+    background: var(--heading-color);
+    box-shadow: 0 0 0 10px var(--heading-color),0 0 50px var(--heading-color) ,0 0 100px var(--heading-color);
+    animation-duration: 9s;
+}
+.bubbles span:nth-child(16){
+    background: var(--button-color);
+    box-shadow: 0 0 0 10px var(--button-color),0 0 50px var(--button-color) ,0 0 100px var(--button-color);
+    animation-duration: 16s;
+}
+
+.bubbles span:nth-child(17){
+    background: var(--heading-color);
+    box-shadow: 0 0 0 10px var(--heading-color),0 0 50px var(--heading-color) ,0 0 100px var(--heading-color);
+    animation-duration: 11s;
+}
+.bubbles span:nth-child(18){
+    background: var(--button-color);
+    box-shadow: 0 0 0 10px var(--button-color),0 0 50px var(--button-color) ,0 0 100px var(--button-color);
+    animation-duration: 6s;
+
+}
+
+.bubbles span:nth-child(19){
+    background: var(--heading-color);
+    box-shadow: 0 0 0 10px var(--heading-color),0 0 50px var(--heading-color) ,0 0 100px var(--heading-color);
+    animation-duration: 14s;
+
+}
+.bubbles span:nth-child(20){
+    background: var(--button-color);
+    box-shadow: 0 0 0 10px var(--button-color),0 0 50px var(--button-color) ,0 0 100px var(--button-color);
+    animation-duration: 13s;
+
+}.bubbles span:nth-child(21){
+    background: var(--heading-color);
+    box-shadow: 0 0 0 10px var(--heading-color),0 0 50px var(--heading-color) ,0 0 100px var(--heading-color);
+    animation-duration: 18s;
+}
+
+
+@keyframes animate{
+
+    0%{
+        transform: translateY(100vh) scale(0.2);
+    }
+    100%{
+        transform: translateY(-10vh) scale(0.7);
+    }
+}
+
+
+/* responsive */
+@media screen and (max-width: 1480px) {
+    .bubbles span{
+        margin:0 15px;
+        width: 25px;
+        height: 25px;
+    }
+
+  }
+  @media screen and (max-width: 1024px) {
+    .bubbles span{
+        margin: 0 10px;
+        width: 22px;
+        height: 22px;
+    
+    }
+  }
+  
+  @media screen and (max-width: 830px) {
+    .bubbles span{
+        margin: 0 7px;
+        width: 17px;
+        height: 17px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .bubbles span{
+        margin: 0 5px;
+        width: 14px;
+        height: 14px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .bubbles span{
+        margin: 3px;
+        width: 10px;
+        height: 10px;
+    }
+  }
+  

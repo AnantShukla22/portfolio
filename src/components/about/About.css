@@ -1,0 +1,309 @@
+.about {
+
+  padding: 35px 100px 100px 100px;
+}
+
+.about_wrapper {
+  grid-template-columns: 3fr 9fr;
+  gap: 60px;
+  padding: 10px 30px 10px 30px;
+}
+
+.about_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 29px; */
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.about_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.about_img > img {
+  width: 220px;
+  height: 220px;
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: 0rem 0rem 9rem -4rem rgb(85, 255, 0);
+}
+
+.about_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about_data {
+  color: var(--text-color);
+  padding: 30px;
+  background-color: rgb(32, 32, 32);
+  box-shadow: 0px 5px 20px 0px rgb(69 67 96/10%);
+  border-radius: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* this is for yhat corner shape */
+.about_data::before {
+  content: "";
+  width: 0px;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 20px solid rgb(32, 32, 32);
+  position: absolute;
+  left: -20px;
+  top: 30%;
+}
+
+.about_title::before {
+  content: "";
+}
+
+.about_description {
+  margin-bottom: 6px;
+  text-align: justify;
+  width: 100%;
+  color: var(--text-color);
+  word-wrap: normal;
+  word-spacing: 1px;
+}
+
+.about_cv_button {
+  margin-top: 15px;
+  background-color: rgb(104, 155, 2);
+  border-radius: 7px;
+  outline: none;
+  padding: 10px 13px;
+  cursor: pointer;
+}
+
+.about_cv_button a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+.about_cv_button:hover {
+  background-color: black;
+  box-shadow: 0.2rem 0.2rem 0.6rem var(--heading-color);
+  transform: translateX(-8px) scale(1.09);
+  transform: rotate(90deg);
+}
+
+.about_cv_button:hover a {
+  color: rgb(154, 224, 47);
+}
+
+.about_skills {
+  row-gap: 15px;
+  position: relative;
+
+}
+
+.skills_data {
+  width: 100%;
+}
+
+.skills_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.skills_title h3 {
+  color: var(--text-color);
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.skills_name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.skills_number {
+  line-height: 1;
+}
+
+/* skills_bar and skills_percentage */
+.skills_bar,
+.skills_percentage_bar {
+  background-color: var(--body-color);
+  height: 8px;
+  border-radius: 4px;
+}
+
+.skills_percentage_bar {
+  display: block;
+}
+
+.Development {
+  width: 80%;
+  background-color: var(--heading-color);
+}
+.UI_UX {
+  width: 70%;
+  background-color: var(--heading-color);
+}
+.Programming {
+  width: 80%;
+  background-color: var(--heading-color);
+}
+
+.myflex {
+  margin-top: 30px;
+  margin-left: 2px;
+}
+
+.myflex h3 {
+  color: rgba(255, 236, 193, 0.763);
+  font-weight: 600;
+  font-size: 21px;
+  text-align: center;
+}
+.flex_list {
+  list-style: disc;
+  margin-left: 21px;
+  font-size: 17px;
+  padding: 3px 3px 0 3px;
+  color:rgb(122, 211, 214);
+
+  font-weight: 500;
+  letter-spacing: 1.2;
+}
+.flex_list:nth-child(1) {
+  margin-top: 10px;
+}
+
+/* ===========hobbies part ================= */
+
+.about_hobbies {
+  grid-template-columns: repeat(4, 2fr);
+  gap: 10px;
+  margin-top: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.about_hobbie {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hobbie_title {
+  font-size: 18px;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.about_button {
+  background-color: black;
+  background: transparent;
+  color: var(--text-color);
+}
+
+/* for resposive */
+
+@media screen and (max-width: 1120px) {
+  .about_wrapper {
+    grid-template-columns: 720px;
+    justify-content: center;
+    row-gap: 30px;
+  }
+  .about_data {
+
+    padding: 23px;
+  }
+
+  .about_data::before {
+    border-left: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 20px solid rgb(32, 32, 32);
+    left: 49%;
+    top: -20%;
+  }
+  .about_skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about_skills hr {
+    left: 50px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width:920px) {
+  .about_title {
+    font-size: 31px;
+    }
+}
+@media screen and (max-width: 768px) {
+  .about{
+    padding: 35px 90px 100px 90px;
+  }
+  .about_wrapper {
+    grid-template-columns: 350px;
+    grid-template-columns: 1fr;
+    
+  }
+  .about_data {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    padding: 23px;
+  }
+
+  .about_data::before {
+    left: 47%;
+  }
+
+  .about_hobbies {
+    grid-template-columns: repeat(4, 2fr);
+    row-gap: 24px;
+    justify-content: center;
+  }
+  .about_skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills_title h3 {
+  font-size: 17px;}
+  .about_cv_button {
+  padding: 8px 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about{
+    padding: 35px 40px 100px 40px;
+  }.about_data {
+padding: 20px;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+  .about{
+    padding: 35px 20px 100px 20px;
+  }
+  .hobbie_title {
+  font-size: 15px;
+  }
+  .about_title {
+    font-size: 28px;
+    }
+    
+}
